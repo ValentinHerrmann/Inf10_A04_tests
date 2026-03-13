@@ -66,6 +66,8 @@ public class Tests {
             h.aufgabe1().invoke();
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe1();
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -77,6 +79,8 @@ public class Tests {
         h.aufgabe1().invoke();
         String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+        outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
         AufgabeMock.aufgabe1();
         String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x->!x.equals("")).toArray(String[]::new);
 
@@ -92,6 +96,8 @@ public class Tests {
             h.aufgabe2().invoke(limit);
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe2(limit);
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -105,6 +111,8 @@ public class Tests {
             h.aufgabe2().invoke(limit);
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe2(limit);
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -121,6 +129,8 @@ public class Tests {
                 h.aufgabe3().invoke(start, ende);
                 String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+                outContent = new ByteArrayOutputStream();
+                System.setOut(new PrintStream(outContent));
                 AufgabeMock.aufgabe3(start, ende);
                 String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -136,6 +146,8 @@ public class Tests {
                 h.aufgabe3().invoke(start,ende);
                 String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+                outContent = new ByteArrayOutputStream();
+                System.setOut(new PrintStream(outContent));
                 AufgabeMock.aufgabe3(start,ende);
                 String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -152,6 +164,8 @@ public class Tests {
             h.aufgabe4().invoke(limit);
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe4(limit);
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -165,6 +179,8 @@ public class Tests {
             h.aufgabe4().invoke(limit);
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe4(limit);
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -177,9 +193,11 @@ public class Tests {
         for(double limit : limits) {
             ByteArrayOutputStream outContent = new ByteArrayOutputStream();
             System.setOut(new PrintStream(outContent));
-            h.aufgabe5().invoke();
+            h.aufgabe5().invoke(limit);
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe5(limit);
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
@@ -193,6 +211,8 @@ public class Tests {
             h.aufgabe5().invoke(limit);
             String[] outLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
             AufgabeMock.aufgabe5(limit);
             String[] expectedLines = Arrays.stream(outContent.toString().split(System.lineSeparator())).filter(x -> !x.equals("")).toArray(String[]::new);
 
