@@ -63,5 +63,95 @@ public class TestManager {
 
 
 
-}    
+    @Test
+    void Aufgabe1_Inhalt() {
+        try {
+            Tests.Aufgabe1_Inhalt();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe2_ZeilenAnzahl() {
+        try {
+            Tests.Aufgabe2_ZeilenAnzahl();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe2_Inhalt() {
+        try {
+            Tests.Aufgabe2_Inhalt();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe3_ZeilenAnzahl() {
+        try {
+            Tests.Aufgabe3_ZeilenAnzahl();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe3_Inhalt() {
+        try {
+            Tests.Aufgabe3_Inhalt();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe4_ZeilenAnzahl() {
+        try {
+            Tests.Aufgabe4_ZeilenAnzahl();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe4_Inhalt() {
+        try {
+            Tests.Aufgabe4_Inhalt();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe5_ZeilenAnzahl() {
+        try {
+            Tests.Aufgabe5_ZeilenAnzahl();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+    @Test
+    void Aufgabe5_Inhalt() {
+        try {
+            Tests.Aufgabe5_Inhalt();
+        }
+        catch (AssertionError e) {
+            fail(e.getMessage());
+        }
+    }
+
+}
 
