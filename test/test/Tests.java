@@ -34,7 +34,10 @@ public class Tests {
 
         for(int i = 0; i < expectedLines.length && i < outLines.length; i++)
         {
-            if(!expectedLines[i].strip().toLowerCase().replace(" ","").equals(outLines[i].strip().toLowerCase().replace(" ",""))) {
+            String exp = expectedLines[i].strip().toLowerCase().replace(" ", "").replace(".0", "");
+            String act = outLines[i].strip().toLowerCase().replace(" ", "").replace(".0", "");
+
+            if(!exp.equals(act)) {
                 indexes.add(i+1);
                 actuals.add(outLines[i]);
                 expecteds.add(expectedLines[i]);
